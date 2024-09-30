@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Libreria>
+
+  <Libro category="workout">
+    <Titulo lang="es">Libro Método RV</Titulo>
+    <autor>Ruben Castro y Victor Vazquez</autor>
+    <año>2020</año>
+    <Precio>40.00</Precio>
+  </Libro>
+
+  <Libro category="workout">
+    <Titulo lang="en">Libro El inexplorado mundo de las Barras Especiales</Titulo>
+    <autor>Ruben Castro y Victor Vazquez</autor>
+    <año>2022</año>
+    <Precio>45.00</Precio>
+  </Libro>
+
+  <Libro category="PersonalGrow">
+    <Titulo lang="es">Cómo Ser Más Productivo (Serie Management en 20 Minutos)</Titulo>
+    <autor>Harvard Business Review</autor>
+    <año>2022</año>
+    <Precio>9,95</Precio>
+  </Librok>
+
+    <Libro category="PersonalGrow">
+    <Titulo lang="es">Los 9 secretos de la gente exitosa (Serie Management en 20 Minutos)</Titulo>
+    <autor>Harvard Business Review</autor>
+    <año>2022</año>
+    <Precio>9,95</Precio>
+  </Libro>
+
+    <Libro category="PersonalGrow">
+    <Titulo lang="es">Cómo gestionar tu tiempo (Serie Management en 20 Minutos)</Titulo>
+    <autor>Harvard Business Review</autor>
+    <año>2022</año>
+    <Precio>9,95</Precio>
+  </Libro>
+
+  <Libro category="Nutrition">
+    <Titulo lang="es">Nutrición desde Cero</Titulo>
+    <autor>David Marchante</autor>
+    <año>2023</año>
+    <Precio>35.00</Precio>
+  </Libro>
+
+    <Libro category="Nutrition">
+    <Titulo lang="es">The Muscle and Strength Pyramid: Entrenamiento: 2 (Las Pirámides de Nutrición y Entrenamiento)</Titulo>
+    <autor>Eric Russell Helms</autor>
+    <autor>Andy Morgan</autor>
+    <autor>Andrea Marie Valdez</autor>
+    <autor>Alberto Alvarez</autor>
+    <autor>Victor Reyes</autor>
+    <autor>Jose Carlos De Francisco</autor>
+    <año>2019</año>
+    <Precio>35.00</Precio>
+  </Libro>
+
+
+</Libreria>
