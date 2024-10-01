@@ -7,14 +7,6 @@
 <svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
   <rect width="200" height="100" x="0" y="0" rx="20" ry="20" fill="Red" />
 </svg>
-
-<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="100" x="0" y="0" rx="20" ry="20" fill="Yellow" />
-</svg>
-
-<svg width="300" height="150" xmlns="http://www.w3.org/2000/svg">
-  <rect width="200" height="100" x="0" y="0" rx="20" ry="20" fill="Red" />
-</svg>
- 
+  
 </body>
 </html>
