@@ -16,3 +16,11 @@ Ejercicio | Descripcion
 [Actividad12](Actividad12.html) | HTML styles.
 [Actividad13](Actividad13.html) | html borders.
 [Actividad14](Actividad14.html) | margin y padding.
+[Actividad15](Actividad15.html) | Tablas.
+[Actividad16](Actividad16.html) | Tablas.
+[Actividad17](Actividad17.html) | Tablas.
+[Actividad18](Actividad18.html) | Tablas.
+[Actividad19](Actividad19.html) | Imágenes.
+[Actividad20](Actividad20.html) | Imágenes.
+[Actividad21](Actividad21.html) | Imágenes.
+[Actividad22](Actividad22.html) | Favicon.
