@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <link href="../../Index.css" rel="stylesheet" type="text/css">
+
+    <script>
+      function printPage() {
+          window.print();
+      }
+  </script>
+
+        <!--Menu-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+    <!--Menu-->
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../Index.html">CSS</a></li>
+        <li><a href="Index_Syntax.html">Syntax</a></li>
+        <li><a href="Index_Colors.html">Colors</a></li>
+        <li><a href="Index_Backgrounds.html">Backgrounds</a></li>
+        <li><a href="Index_Align.html">Align</a></li>
+</ul>
+</div>
+<!--Final Menu-->
+<div class="tutorialtitle">Borders</div>
+<br>
+<div class="tablaizq">
+  <p>The border property in CSS is used to define the style, width, and color of the border around an element. You can use shorthand properties to combine all border aspects, or control each side (top, right, bottom, left) individually for precise styling.</p>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Syntax</div>
+<br>
+  <p>selector {</p>
+  <p> border: [width] [style] [color];</p>
+  <p>}</p>
+  <br>
+  <p>Each value is optional, but style is required to display a border.</p>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Syntax</div>
+  <br>
+  <ol>
+    <li>border-width</li>
+    <ul>
+      <li>Sets the thickness of the border.</li>
+      <li>Values: Keywords (thin, medium, thick), or specific sizes (1px, 0.5em).</li>
+      <li>Example: border-width: 2px;</li>
+    </ul>
+    <br>
+    <li>border-style</li>
+    <ul>
+      <li>Defines the style of the border.</li>
+      <li>Values:</li>
+      <ul>
+        <li>none: No border (default).</li>
+        <li>solid: A single solid line.</li>
+        <li>dashed: A dashed line.</li>
+        <li>dotted: A dotted line.</li>
+        <li>double: Two solid lines.</li>
+        <li>groove, ridge: 3D effects.</li>
+        <li>inset, outset: Other 3D effects.</li>
+      </ul>
+      <li>Example: border-style: solid;</li>
+    </ul>
+    <br>
+    <li>border-color</li>
+    <ul>
+      <li>Specifies the border's color.</li>
+      <li>Values: Named colors (red), Hex codes (#000), RGB/A, HSL/A, or transparent.</li>
+      <li>Example: border-color: blue;</li>
+    </ul>
+  </ol>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Shorthand border</div>
+  <br>
+  <p>Combines border-width, border-style, and border-color into one property.</p>
+  <br>
+  <p>selector {</p>
+  <p> border: 3px dashed red;</p>
+  <p>}</p>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Shorthand border</div>
+  <br>
+  <p>You can target specific sides of an element:</p>
+  <ul>
+    <li>border-top</li>
+    <li>border-right</li>
+    <li>border-bottom</li>
+    <li>border-left</li>
+  </ul>
+  <br>
+  <div class="tutorialtitle2">Example</div>
+  <br>
+  <p>selector {</p>
+  <p> border-top: 2px solid green;</p>
+  <p> border-left: 5px dotted blue;</p>
+  <p>}</p>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Additional Border Properties</div>
+  <br>
+  <ol>
+    <li>border-radius</li>
+    <ul>
+      <li>Creates rounded corners.</li>
+      <li>Values: Length (10px) or percentage (50% for circles).</li>
+      <li>Example: border-radius: 15px;</li>
+    </ul>
+    <br>
+    <li>border-image</li>
+    <ul>
+      <li>Allows using an image as a border.</li>
+      <li>Values</li>
+      <ul>
+        <li>border-image-source: URL of the image.</li>
+        <li>border-image-slice: Defines which part of the image is used.</li>
+        <li>border-image-repeat: How the image is repeated (stretch, repeat,round).</li>
+      </ul>
+      <li>Example: border-image: url('border.png') 30 stretch;</li>
+    </ul>
+    <br>
+    <li>border-spacing</li>
+    <ul>
+      <li> Applies to table elements to set space between borders.</li>
+      <li>Example: border-spacing: 10px;</li>
+    </ul>
+    <br>
+    <li>box-shadow</li>
+    <ul>
+      <li>Although not technically a border property, it creates shadow effects around an element.</li>
+      <li>Example: box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);</li>
+    </ul>
+  </ol>
+</div>
+
+<footer><input type="button" value="Descargar Pagina PDF" onclick="printPage()"></footer>
+</body>
+</html>

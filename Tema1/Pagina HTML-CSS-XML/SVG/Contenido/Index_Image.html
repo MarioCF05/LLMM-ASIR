@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link href="../../Index.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+    <!--Menu-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+    <!--Menu-->
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../Index.html">SVG</a></li>
+        <li> <a href="Index_Shapes.html">SVG_Shapes</a></li>
+        <li> <a href="Index_Text.html">SVG_Text</a></li>
+        <li> <a href="Index_Links.html">SVG_Links</a></li>
+        <li> <a href="Index_Marker.html">SVG_Marker</a></li>
+</ul>
+</div>
+<!--Final Menu-->
+<div class="tutorialtitle">Image</div>
+<br>
+<div class="tablaizq">
+    <p>In SVG (Scalable Vector Graphics), the &lt;image&gt; element is used to embed raster images (like JPEG, PNG, or GIF) within an SVG document. This allows SVGs to include non-vector elements while retaining their scalable properties and interactivity.</p>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Syntax:</div>
+    <p>&lt;image href="imageURL" x="x-coordinate" y="y-coordinate" width="width" height="height" [attributes] /&gt</p>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Key Attributes of &lt;image&gt;:</div>
+    <ol>
+        <li>href:</li>
+        <ul>
+            <li>Specifies the URL or file path to the image.</li>
+            <li>Example: href="image.png"</li>
+        </ul>
+
+        <br>
+        <li>x and y:</li>
+        <ul>
+            <li>Define the top-left corner's position of the image within the SVG canvas.</li>
+            <li>Default: 0</li>
+            <li>Example: x="10" y="20"</li>
+        </ul>
+
+        <br>
+        <li>width and height:</li>
+        <ul>
+            <li>Set the dimensions of the image.</li>
+            <li>Default: The image's intrinsic dimensions are used if these attributes are not specified.</li>
+            <li>Example: width="200" height="150"</li>
+        </ul>
+
+        <br>
+        <li>preserveAspectRatio:</li>
+        <ul>
+            <li>Controls how the image scales and fits within the specified width and height.</li>
+            <li>Values:</li>
+            <ul>
+                <li>none: Distorts the image to fill the area.</li>
+                <li>xMinYMin, xMidYMid, xMaxYMax: Aligns the image to specific corners or the center while preserving aspect ratio.</li>
+                <li>meet: Scales to fit within the area while preserving aspect ratio.</li>
+                <li>slice: Scales to fill the area while preserving aspect ratio, possibly cropping the image.</li>
+            </ul>
+            <li>Example: preserveAspectRatio="xMidYMid meet"</li>
+        </ul>
+
+        <br>
+        <li>opacity:</li>
+        <ul>
+            <li>Sets the transparency level of the image.</li>
+            <li>Example: opacity="0.5"</li>
+        </ul>
+
+        <br>
+        <li>clip-path:</li>
+        <ul>
+            <li>Clips the image using a defined shape or path.</li>
+            <li>Example:</li>
+            <br>  
+            <p>&lt;clipPath id="clip"&gt;</p>
+            <p>&lt;circle cx="50" cy="50" r="40" /&gt;</p>
+            <p>&lt;/clipPath&gt;</p>
+            <p>&lt;image href="image.jpg" clip-path="url(#clip)" /&gt;</p>
+        </ul>
+    </ol>
+
+</div>
+<footer><input type="button" value="Descargar Pagina PDF" onclick="printPage()"></footer>
+</body>
+</html>
