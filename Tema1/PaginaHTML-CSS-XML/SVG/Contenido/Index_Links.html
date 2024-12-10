@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link href="../../Index.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+    <!--Menu-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+    <!--Menu-->
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../Index.html">SVG</a></li>
+        <li> <a href="Index_Shapes.html">SVG_Shapes</a></li>
+        <li> <a href="Index_Text.html">SVG_Text</a></li>
+        <li> <a href="Index_Image.html">SVG_Image</a></li>
+        <li> <a href="Index_Marker.html">SVG_Marker</a></li>
+</ul>
+</div>
+<!--Final Menu-->
+<div class="tutorialtitle">Links</div>
+
+<div class="tablaizq">
+    <p>In SVG (Scalable Vector Graphics), links can be created using the &lt;a&gt; element, which allows you to hyperlink parts of your SVG, such as shapes, text, or groups of elements. These links behave like regular HTML links and are clickable.</p>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Syntax:</div>
+    <p>&lt;a href="URL" [attributes]&gt;</a></p>
+    <p>SVG content (shapes, text, groups, etc.)</p>
+    <p>&lt;/a&gt;</p>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Key Attributes of the &lt;a&gt; Element:</div>
+    <ol>
+        <li>href:</li>
+        <ul>
+            <li>Specifies the URL or destination of the link.</li>
+            <li>Example: href="https://example.com"</li>
+        </ul>
+
+        <br>
+        <li>target:</li>
+        <ul>
+            <li>Specifies how the link will open.</li>
+            <li>Values:</li>
+            <ul>
+                <li>_self (default): Opens in the same tab.</li>
+                <li>_blank: Opens in a new tab.</li>
+                <li>_parent: Opens in the parent frame.</li>
+                <li>_top: Opens in the full body of the window.</li>
+            </ul>
+            <li>Example: target="_blank"</li>
+        </ul>
+
+        <br>
+        <li>xlink:href (deprecated):</li>
+        <ul>
+            <li>Previously used for linking in SVG but replaced by href in modern SVG.</li>
+        </ul>
+
+        <br>
+        <li>download:</li>
+        <ul>
+            <li>Allows the linked file to be downloaded instead of opening.</li>
+            <li>Example: download="filename"</li>
+        </ul>
+
+    </ol>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Accessibility and Styling:</div>
+    <ol>
+        <li>Tab Navigation:</li>
+        <ul>
+            <li>Elements inside &lt;a&gt; tags are automatically focusable with the keyboard.</li>
+            <li>Ensure the linked content is descriptive for accessibility.</li>
+        </ul>
+        <br>
+        <li>Styling Links:</li>
+        <ul>
+            <li>SVG links can be styled with :hover or :active pseudo-classes using CSS.</li>
+            <li>Example:</li>
+            <p>a:hover text {</p>
+            <p>fill: orange;</p>
+            <p>}</p>
+        </ul>
+        <br>
+        <li>ARIA Attributes:</li>
+        <ul>
+            <li>Use ARIA attributes for better screen reader support.</li>
+            <li>Example:</li>
+            <br>
+            <p>&lt;a href="https://example.com" aria-label="Go to Example"&gt;</p>
+            <p>&lt;circle cx="50" cy="50" r="40" fill="blue" /&gt;</p>
+            <p>&lt;/a&gt;</p>
+        </ul>
+    </ol>
+</div>
+<footer><input type="button" value="Descargar Pagina PDF" onclick="printPage()"></footer>
+</body>
+</html>

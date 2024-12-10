@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker</title>
+    <link href="../../Index.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+    <!--Menu-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+    <!--Menu-->
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../Index.html">SVG</a></li>
+        <li> <a href="Index_Shapes.html">SVG_Shapes</a></li>
+        <li> <a href="Index_Text.html">SVG_Text</a></li>
+        <li> <a href="Index_Links.html">SVG_Links</a></li>
+        <li> <a href="Index_Image.html">SVG_Image</a></li>
+</ul>
+</div>
+<!--Final Menu-->
+<div class="tutorialtitle">Marker</div>
+
+<div class="tablaizq">
+    <p>In SVG, the &lt;marker&gt; element is used to define reusable graphics that can be attached to the start, middle, or end of paths, lines, or shapes. It’s particularly useful for creating arrows, dots, or other embellishments on paths.</p>
+
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Syntax:</div>
+    <p>&lt;marker id="markerID" refX="x" refY="y" markerWidth="width" markerHeight="height" orient="angle" [attributes]&gt;</marker>
+    <p>Graphic elements like shapes or paths</p>
+    <p>&lt;/marker&gt;</p>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Key Attributes of &lt;marker&gt;:</div>
+    <ol>
+        <li>id:</li>
+        <ul>
+            <li>A unique identifier to reference the marker.</li>
+            <li>Example: id="arrowhead"</li>
+        </ul>
+
+        <br>
+        <li>refX and refY:</li>
+        <ul>
+            <li>Define the reference point of the marker (typically where it connects to the path).</li>
+            <li>Values: Coordinates relative to the marker’s viewport.</li>
+            <li>Example: refX="0" refY="5"</li>
+        </ul>
+
+        <br>
+        <li>markerWidth and markerHeight:</li>
+        <ul>
+            <li>Set the size of the marker's viewport.</li>
+            <li>Example: markerWidth="10" markerHeight="10"</li>
+        </ul>
+
+        <br>
+        <li>orient:</li>
+        <ul>
+            <li>Determines the orientation of the marker.</li>
+            <li>Values:</li>
+            <ul>
+                <li>auto: Rotates the marker to align with the path.</li>
+                <li>auto-start-reverse: Similar to auto, but reverses the marker at the start of the path.</li>
+                <li>A specific angle in degrees (e.g., 90 for a fixed angle).</li>
+            </ul>
+            <li>Example: orient="auto"</li>
+        </ul>
+
+        <br>
+        <li>viewBox (optional):</li>
+        <ul>
+            <li>Defines the coordinate system of the marker for scaling.</li>
+            <li>Example: viewBox="0 0 10 10"</li>
+        </ul>
+    </ol>
+</div>
+
+<div class="tablaizq">
+    <div class="tutorialtitle2">Using &lt;marker&gt;with Paths:</div>
+    <p>Markers are applied to paths, lines, or other shapes using the marker-start, marker-mid, and marker-end attributes.</p>
+    <p>Example:</p>
+    <br>
+    <p>&lt;path d="M10 10 L100 100" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" /&gt;</p>
+</div>
+<footer><input type="button" value="Descargar Pagina PDF" onclick="printPage()"></footer>
+</body>
+</html>

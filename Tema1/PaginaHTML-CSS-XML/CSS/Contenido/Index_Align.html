@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Align</title>
+    <link href="../../Index.css" rel="stylesheet" type="text/css">
+
+    <script>
+      function printPage() {
+          window.print();
+      }
+  </script>
+
+        <!--Menu-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+           <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body class="body">
+    <!--Menu-->
+
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><span></span></label>
+    <label for="active" class="close"></label>
+    <div class="wrapper">
+      <ul>
+        <li><a href="../../Index.html">Home</a></li>
+        <li><a href="../Index.html">CSS</a></li>
+        <li><a href="Index_Syntax.html">Syntax</a></li>
+        <li><a href="Index_Colors.html">Colors</a></li>
+        <li><a href="Index_Backgrounds.html">Backgrounds</a></li>
+        <li><a href="Index_Borders.html">Borders</a></li>
+</ul>
+</div>
+<!--Final Menu-->
+<div class="tutorialtitle">Align</div>
+<div class="tablaizq">
+<p>In CSS, alignment properties control the positioning of elements and their content within a container. The align-related properties are used for text, inline elements, block elements, and flex/grid containers. They enable vertical, horizontal, and contextual alignment for both the element itself and its child elements.</p>
+</div>
+
+<div class="tablaizq">
+  <div class="tutorialtitle2">Key Align Properties in CSS</div>
+  <ol>
+    <li>text-align</li>
+    <p>Aligns inline content (like text) horizontally within a block-level container.</p>
+    <ul>
+      <li>Values</li>
+      <ul>
+        <li>left (default): Aligns content to the left.</li>
+        <li>right: Aligns content to the right.</li>
+        <li>center: Centers the content.</li>
+        <li>justify: Aligns content evenly across the width.</li>
+      </ul>
+      <li>Example</li>
+      <br>
+      <p>p {</p>
+      <p> text-align: center;</p>
+      <p>}</p>
+    </ul>
+
+    <br>
+    <li>vertical-align</li>
+    <p>Aligns inline or table-cell content vertically relative to the parent container.</p>
+    <ul>
+      <li>Values</li>
+      <ul>
+        <li>baseline (default): Aligns with the baseline of the parent element.</li>
+        <li>top, middle, bottom: Aligns to the respective positions.</li>
+        <li>Numeric values: Offset alignment (e.g., 10px).</li>
+      </ul>
+      <li>Example:</li>
+      <br>
+      <p>img {</p>
+      <p> vertical-align: middle;</p>
+      <p>}</p>
+    </ul>
+
+    <br>
+    <li>align-items</li>
+    <p>Aligns child elements vertically within a flex or grid container.</p>
+    <ul>
+      <li>Values</li>
+      <ul>
+        <li>stretch (default): Stretches items to fill the container.</li>
+        <li>flex-start: Aligns items at the start.</li>
+        <li>flex-end: Aligns items at the end.</li>
+        <li>center: Centers items.</li>
+        <li>baseline: Aligns to the baseline of the container.</li>
+      </ul>
+      <li>Example</li>
+      <br>
+      <p>.container {</p>
+        <p>  display: flex;</p>
+        <p>  align-items: center;</p>
+      <p>}</p>
+    </ul>
+
+    <br>
+    <li>align-self</li>
+    <p>Aligns a single flex/grid child independently of others in the container.</p>
+    <ul>
+      <li>Values: Same as align-items.</li>
+      <li>Example</li>
+      <br>
+      <p>.item {</p>
+        <p> align-self: flex-end;</p>
+        <p>}</p>
+    </ul>
+
+    <br>
+    <li>align-content</li>
+    <p>Controls the alignment of multiple lines of content in a flex/grid container.</p>
+    <ul>
+      <li>Values</li>
+      <ul>
+        <li>stretch (default): Stretches lines to fill the container.</li>
+        <li>flex-start, flex-end: Aligns lines to the start or end.</li>
+        <li>center: Centers lines.</li>
+        <li>space-between, space-around, space-evenly: Distributes lines evenly.</li>
+      </ul>
+      <li>Example</li>
+      <br>
+      <p>.container {</p>
+        <p> display: flex;</p>
+        <p> flex-wrap: wrap;</p>
+        <p> align-content: space-between;</p>
+        <p>}</p>
+    </ul>
+
+    <br>
+    <li>justify-content</li>
+    <p>Aligns child elements horizontally in a flex or grid container.</p>
+    <ul>
+      <li>Values</li>
+      <ul>
+        <li>flex-start (default): Aligns items to the start.</li>
+        <li>flex-end: Aligns items to the end.</li>
+        <li>center: Centers items.</li>
+        <li>space-between, space-around, space-evenly: Distributes items evenly with varying spaces.</li>
+      </ul>
+      <li>Example</li>
+      <br>
+      <p>.container {</p>
+        <p>  display: flex;</p>
+        <p>  justify-content: center;</p>
+        <p>}</p>
+    </ul>
+
+    <br>
+    <li>place-items, place-content, and place-self</li>
+    <p>These are shorthand properties for aligning items in grid containers:</p>
+    <ul>
+      <li>place-items: Combines align-items and justify-items.</li>
+      <li>place-content: Combines align-content and justify-content.</li>
+      <li>place-self: Combines align-self and justify-self.</li>
+    </ul>
+  </ol>
+</div>
+<footer><input type="button" value="Descargar Pagina PDF" onclick="printPage()"></footer>
+</body>
+</html>
