@@ -10,4 +10,4 @@ Ejercicio | Descripcion
 [Ejercicio3](/Tema1/rectangulos.svg) |¿Que es SVG? Ejemplo SVG 3 rectangulos con diferentes colores.
 [Conjunto Actividades HTML](/Tema1/LMSGI_02_Actividades/README.md) | Conjunto de Actividades LMSGI 02.
 [Trabajo trimestral](/Tema1/PaginaHTML-CSS-XML) |Create from scratch a website called Web4U where you will offer information and code examples about HTML, SVG and CSS.
-[Trabajo trimestral](https://mariocf05.github.io/TrabajoTrimestral/) | Enlace Trabajo Trimestral alojado.
+[Trabajo trimestral alojado](https://mariocf05.github.io/TrabajoTrimestral/) | Enlace Trabajo Trimestral alojado.
