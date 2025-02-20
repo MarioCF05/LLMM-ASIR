@@ -1,0 +1,11 @@
+1. Leyes de Murphy
+
+En este ejercicio, se utilizan propiedades de CSS para posicionar y superponer las leyes de Murphy de manera independiente. Aunque no se especifican detalles exactos en los resultados de búsqueda, es común utilizar propiedades como position: absolute; para posicionar los elementos de forma independiente y permitir que se superpongan. Además, se pueden emplear propiedades como top, left, right y bottom para definir la ubicación exacta de cada elemento en la página. La propiedad z-index también puede ser utilizada para controlar el apilamiento de los elementos superpuestos. 
+MCLIBRE.ORG
+
+2. Software Libre 1
+
+Este ejercicio presenta una lista de programas de software libre organizados en categorías. Aunque no se detallan las propiedades específicas en los resultados de búsqueda, es probable que se utilicen propiedades como position: absolute; para posicionar los elementos de manera precisa en la página. Además, se pueden emplear propiedades como top, left, right y bottom para definir la ubicación exacta de cada elemento. La propiedad z-index también puede ser utilizada para controlar el apilamiento de los elementos superpuestos. 
+MCLIBRE.ORG
+
+Es importante destacar que, en ambos ejercicios, se hace uso de propiedades de CSS para controlar el flujo y la disposición de los elementos en la página, asegurando una presentación coherente y estéticamente agradable.

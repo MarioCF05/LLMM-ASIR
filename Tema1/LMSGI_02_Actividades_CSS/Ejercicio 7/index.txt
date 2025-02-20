@@ -1,0 +1,11 @@
+1. Citas de Óscar Wilde
+
+En este ejercicio, se emplean propiedades de CSS para organizar y presentar las citas de manera atractiva. Aunque no se especifican detalles exactos en los resultados de búsqueda, es común utilizar propiedades como float, margin, padding y text-align para alinear y espaciar los elementos de texto y las imágenes. Estas propiedades permiten que las citas se presenten de forma ordenada y visualmente atractiva. 
+MCLIBRE.ORG
+
+2. Efemérides del 14 de diciembre
+
+Este ejercicio presenta una lista de eventos históricos organizados por períodos. Aunque no se detallan las propiedades específicas en los resultados de búsqueda, es probable que se utilicen propiedades como float, clear, margin y padding para posicionar y espaciar los elementos de manera adecuada. Estas propiedades facilitan la creación de una estructura clara y legible para la presentación de las efemérides. 
+MCLIBRE.ORG
+
+Es importante destacar que, en ambos ejercicios, se hace uso de propiedades de CSS para controlar el flujo y la disposición de los elementos en la página, asegurando una presentación coherente y estéticamente agradable.
