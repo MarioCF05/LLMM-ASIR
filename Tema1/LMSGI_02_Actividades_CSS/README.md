@@ -3,7 +3,7 @@
 
 Ejercicio | Descripcion
 ----------|------------
-[Actividad1](Ejercicio1/index.html) | Ejercicio 1
+[Actividad1](Ejercicio 1/index.html) | Ejercicio 1
 [Actividad2]() | Ejercicio 2
 [Actividad3]() | Ejercicio 3
 [Actividad4]() | Ejercicio 4
