@@ -13,4 +13,4 @@ Ejercicio | Descripcion
 [Trabajo trimestral alojado](https://mariocf05.github.io/TrabajoTrimestral/) | Enlace Trabajo Trimestral alojado.
 [Trabajo trimestral Bootstrap](https://mariocf05.github.io/Bootstrap/) | Bootstrap ENLACE PAGINA.
 [Trabajo trimestral Bootstrap alojado](https://github.com/MarioCF05/Bootstrap) | Bootstrap archivos.
-[Conjunto Actividades CSS](/Tema1/LMSGI_02_Actividades_CSS/README.md) | Conjunto de Actividades LMSGI 02.
+[Conjunto Actividades CSS](/Tema1/LMSGI_02_Actividades_CSS/README.md) | Conjunto de Actividades CSS.
