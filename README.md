@@ -11,5 +11,5 @@ Ejercicio | Descripcion
 [Conjunto Actividades HTML](/Tema1/LMSGI_02_Actividades/README.md) | Conjunto de Actividades LMSGI 02.
 [Trabajo trimestral](https://github.com/MarioCF05/TrabajoTrimestral) |Create from scratch a website called Web4U where you will offer information and code examples about HTML, SVG and CSS.
 [Trabajo trimestral alojado](https://mariocf05.github.io/TrabajoTrimestral/) | Enlace Trabajo Trimestral alojado.
-[Trabajo trimestral Bootstrap](https://mariocf05.github.io/Bootstrap/) | Bootstrap.
-[Trabajo trimestral Bootstrap alojado](https://github.com/MarioCF05/Bootstrap) | Bootstrap.
+[Trabajo trimestral Bootstrap](https://mariocf05.github.io/Bootstrap/) | Bootstrap ENLACE PAGINA.
+[Trabajo trimestral Bootstrap alojado](https://github.com/MarioCF05/Bootstrap) | Bootstrap archivos.
