@@ -19,4 +19,17 @@ Ejercicio | Descripcion
 
 Ejercicio | Descripcion
 ----------|------------
-[Ejercicio1](/Tema1/pagina.html)
+[Ejercicio1](/temajava/Ejer_1) | Basics
+[Ejercicio2](/temajava/Ejer_2) | Showing messages
+[Ejercicio3](/temajava/Ejer_3) | 
+[Ejercicio4](/temajava/Ejer_4) | Working with variables
+[Ejercicio5](/temajava/Ejer_5) | Basics.
+[Ejercicio6](/temajava/Ejer_6) | Random Quotes.
+[Ejercicio7](/temajava/Ejer_7) | Image Slider.
+[Ejercicio8](/temajava/Ejer_8) | Calculator.
+[Ejercicio9](/temajava/Ejer_9) | Convert from Celsius to Fahrenheit
+[Ejercicio10](/temajava/Ejer_10) | Functions
+[EjercicioDOM1](/temajava/DOM/Ejer_1) | Basics.
+[EjercicioDOM2](/temajava/DOM/Ejer_2) | Create elements.
+[EjercicioDOM3](/temajava/DOM/Ejer_3) | Removing elements
+[EjercicioDOM4](/temajava/DOM/Ejer_4) | Html document properties
