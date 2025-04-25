@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar Imagen Dinámicamente</title>
+  <script>
+    function agregarImagen() {
+      const img = document.createElement("img");
+      img.src = "img/img1.jpg";
+      img.alt = "Imagen agregada";
+      img.style.width = "200px";
+      document.getElementById("contenedor").appendChild(img);
+    }
+  </script>
+</head>
+<body>
+  <div id="contenedor"></div>
+  <button onclick="agregarImagen()">Agregar imagen</button>
+</body>
+</html>

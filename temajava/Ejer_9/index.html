@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convertidor de Temperaturas</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 20px; 
+      max-width: 400px; 
+      margin: auto;
+    }
+    label, input, button {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 8px 12px;
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function convertToCelsius() {
+      var f = parseFloat(document.getElementById("tbf").value);
+      if (!isNaN(f)) {
+        var c = toCelsius(f);
+        document.getElementById("tbc").value = c.toFixed(2);
+      } else {
+        alert("Introduce un valor numérico en Fahrenheit");
+      }
+    }
+
+    function convertToFahrenheit() {
+      var c = parseFloat(document.getElementById("tbc").value);
+      if (!isNaN(c)) {
+        var f = toFahrenheit(c);
+        document.getElementById("tbf").value = f.toFixed(2);
+      } else {
+        alert("Introduce un valor numérico en Celsius");
+      }
+    }
+
+    function toCelsius(f) {
+      return (5/9) * (f - 32);
+    }
+
+    function toFahrenheit(c) {
+      return (c * 9/5) + 32;
+    }
+  </script>
+</head>
+<body>
+  <h2>Convertidor de Temperaturas</h2>
+
+  <label for="tbf">Fahrenheit:</label>
+  <input type="text" id="tbf" placeholder="°F">
+
+  <label for="tbc">Celsius:</label>
+  <input type="text" id="tbc" placeholder="°C">
+
+  <button type="button" onclick="convertToCelsius()">
+    Convertir °F → °C
+  </button>
+  <button type="button" onclick="convertToFahrenheit()">
+    Convertir °C → °F
+  </button>
+</body>
+</html>
+

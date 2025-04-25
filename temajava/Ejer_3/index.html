@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de Coches y Spiderman</title>
+
+  <!-- Estilo 1 -->
+  <style id="estilo1">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .style-switcher {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .gallery-area {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+      margin: 0 2%;
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .gallery-area h2 {
+      text-align: center;
+    }
+  </style>
+
+  <!-- Estilo 2 -->
+  <style id="estilo2" disabled>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color: #222;
+      color: #eee;
+    }
+    h1 {
+      text-align: center;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .style-switcher {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .style-switcher button {
+      background: #444;
+      color: #eee;
+      border: none;
+      padding: 8px 12px;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .gallery-area {
+      display: inline-block;
+      width: 45%;
+      vertical-align: top;
+      margin: 0 2%;
+      padding: 10px;
+      background: #333;
+      border: 2px solid #555;
+      border-radius: 12px;
+    }
+    .gallery-area h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    function switchStyle(n) {
+      document.getElementById('estilo1').disabled = (n !== 1);
+      document.getElementById('estilo2').disabled = (n !== 2);
+    }
+
+    function cambiaImagen(tipo) {
+      if (tipo === 'car') {
+        const sel = document.getElementById('selectCars');
+        document.getElementById('imgCar').src = sel.value;
+      } else {
+        const sel = document.getElementById('selectSpidey');
+        document.getElementById('imgSpider').src = sel.value;
+      }
+    }
+
+    window.onload = function() {
+      switchStyle(1);
+    };
+  </script>
+</head>
+<body>
+  <h1>Galería de Coches y Spiderman</h1>
+
+  <div class="style-switcher">
+    <button onclick="switchStyle(1)">Estilo 1</button>
+    <button onclick="switchStyle(2)">Estilo 2</button>
+  </div>
+
+  <!-- Galería de Coches -->
+  <div class="gallery-area">
+    <h2>Coches</h2>
+    <select id="selectCars" onchange="cambiaImagen('car')">
+      <option value="Imagenes/Car/coche1.jpg">Coche 1</option>
+      <option value="Imagenes/Car/coche2.jpg">Coche 2</option>
+      <option value="Imagenes/Car/coche3.jpg">Coche 3</option>
+      <option value="Imagenes/Car/coche4.jpg">Coche 4</option>
+      <option value="Imagenes/Car/coche5.jpg">Coche 5</option>
+      <option value="Imagenes/Car/coche6.jpg">Coche 6</option>
+    </select>
+    <br><br>
+    <img id="imgCar" src="Imagenes/Car/coche1.jpg" alt="Coche" height="300">
+  </div>
+
+  <!-- Galería de Spiderman -->
+  <div class="gallery-area">
+    <h2>Spiderman</h2>
+    <select id="selectSpidey" onchange="cambiaImagen('spider')">
+      <option value="Imagenes/Spider/spiderman1.gif">Spiderman 1</option>
+      <option value="Imagenes/Spider/spiderman2.jpg">Spiderman 2</option>
+      <option value="Imagenes/Spider/spiderman3.jpg">Spiderman 3</option>
+      <option value="Imagenes/Spider/Spiderman4.jpg">Spiderman 4</option>
+      <option value="Imagenes/Spider/spiderman5.jpg">Spiderman 5</option>
+    </select>
+    <br><br>
+    <img id="imgSpider" src="Imagenes/Spider/spiderman1.gif" alt="Spiderman" height="300">
+  </div>
+</body>
+</html>

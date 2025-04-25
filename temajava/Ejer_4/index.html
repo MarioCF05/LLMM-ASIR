@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4: Working with Variables</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .example { margin-bottom: 20px; }
+    label { display: inline-block; width: 150px; }
+    input { padding: 5px; margin-right: 10px; }
+    button { padding: 5px 10px; }
+    p.result { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <div class="example">
+    <h2>Text Variable</h2>
+    <label for="textInput">Enter a text:</label>
+    <input type="text" id="textInput" placeholder="e.g. OpenAI">
+    <button onclick="showText()">Show Text</button>
+    <p id="textResult" class="result"></p>
+  </div>
+
+  <div class="example">
+    <h2>Number Variable</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="e.g. 42">
+    <button onclick="showNumber()">Show Number</button>
+    <p id="numberResult" class="result"></p>
+  </div>
+
+  <div class="example">
+    <h2>Combined Example</h2>
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="Your name">
+    <label for="ageInput">Age:</label>
+    <input type="number" id="ageInput" placeholder="Your age">
+    <button onclick="showCombined()">Show Combined</button>
+    <p id="combinedResult" class="result"></p>
+  </div>
+
+  <script>
+    function showText() {
+      // Declare a variable and assign value from input
+      var userText = document.getElementById('textInput').value;
+      // Display it using innerHTML
+      document.getElementById('textResult').innerHTML = "You entered: " + userText;
+    }
+
+    function showNumber() {
+      // Declare a variable and assign value from input
+      var userNumber = document.getElementById('numberInput').value;
+      // Convert to number type
+      userNumber = Number(userNumber);
+      // Display it using innerHTML
+      document.getElementById('numberResult').innerHTML = "Your number is: " + userNumber;
+    }
+
+    function showCombined() {
+      // Declare variables for text and number
+      var userName = document.getElementById('nameInput').value;
+      var userAge = Number(document.getElementById('ageInput').value);
+      // Display combined message
+      document.getElementById('combinedResult').innerHTML =
+        "Hello, " + userName + "! You are " + userAge + " years old.";
+    }
+  </script>
+</body>
+</html>

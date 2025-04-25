@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 10 con Inputs</title>
+  <script>
+    // A
+    function max() {
+      let a = parseFloat(document.getElementById("a1").value);
+      let b = parseFloat(document.getElementById("a2").value);
+      document.getElementById("resA").innerText = Math.max(a, b);
+    }
+
+    // B
+    function maxOfThree() {
+      let a = parseFloat(document.getElementById("b1").value);
+      let b = parseFloat(document.getElementById("b2").value);
+      let c = parseFloat(document.getElementById("b3").value);
+      document.getElementById("resB").innerText = Math.max(a, b, c);
+    }
+
+    // C
+    function isVowel() {
+      let char = document.getElementById("c1").value;
+      if (char.length !== 1) {
+        document.getElementById("resC").innerText = "Ingresa un solo carácter.";
+        return;
+      }
+      document.getElementById("resC").innerText = "aeiouAEIOU".includes(char) ? "Es vocal" : "No es vocal";
+    }
+
+    // D
+    function translate() {
+      let text = document.getElementById("d1").value;
+      let result = "";
+      for (let char of text) {
+        if ("aeiouAEIOU ".includes(char)) {
+          result += char;
+        } else {
+          result += char + "o" + char;
+        }
+      }
+      document.getElementById("resD").innerText = result;
+    }
+
+    // E
+    function sum() {
+      let arr = document.getElementById("e1").value.split(",").map(Number);
+      let result = arr.reduce((a, b) => a + b, 0);
+      document.getElementById("resE1").innerText = result;
+    }
+
+    function multiply() {
+      let arr = document.getElementById("e1").value.split(",").map(Number);
+      let result = arr.reduce((a, b) => a * b, 1);
+      document.getElementById("resE2").innerText = result;
+    }
+
+    // F
+    function reverse() {
+      let str = document.getElementById("f1").value;
+      document.getElementById("resF").innerText = str.split("").reverse().join("");
+    }
+
+    // G
+    function sortWords() {
+      let arr = document.getElementById("g1").value.split(",");
+      document.getElementById("resG").innerText = arr.sort().join(", ");
+    }
+
+    // H
+    function findLongestWord() {
+      let arr = document.getElementById("h1").value.split(",");
+      let longest = Math.max(...arr.map(word => word.length));
+      document.getElementById("resH").innerText = longest;
+    }
+
+    // I
+    function filterLongWords() {
+      let arr = document.getElementById("i1").value.split(",");
+      let i = parseInt(document.getElementById("i2").value);
+      let result = arr.filter(word => word.length > i);
+      document.getElementById("resI").innerText = result.join(", ");
+    }
+
+    // J
+    function charFreq() {
+      let str = document.getElementById("j1").value;
+      const freq = {};
+      for (let char of str) {
+        freq[char] = (freq[char] || 0) + 1;
+      }
+      document.getElementById("resJ").innerText = JSON.stringify(freq, null, 2);
+    }
+  </script>
+</head>
+<body>
+  <h1>Ejercicio 10 - Funciones con Inputs</h1>
+
+  <h3>A. Max entre 2 números</h3>
+  <input id="a1" type="number"> y 
+  <input id="a2" type="number">
+  <button onclick="max()">Calcular</button>
+  <p id="resA"></p>
+
+  <h3>B. Max entre 3 números</h3>
+  <input id="b1" type="number">
+  <input id="b2" type="number">
+  <input id="b3" type="number">
+  <button onclick="maxOfThree()">Calcular</button>
+  <p id="resB"></p>
+
+  <h3>C. ¿Es vocal?</h3>
+  <input id="c1" type="text" maxlength="1">
+  <button onclick="isVowel()">Verificar</button>
+  <p id="resC"></p>
+
+  <h3>D. Rövarspråket</h3>
+  <input id="d1" type="text" style="width:300px">
+  <button onclick="translate()">Traducir</button>
+  <p id="resD"></p>
+
+  <h3>E. Suma y Multiplicación de Array</h3>
+  <input id="e1" type="text" placeholder="Ej: 1,2,3,4">
+  <button onclick="sum()">Sumar</button>
+  <button onclick="multiply()">Multiplicar</button>
+  <p id="resE1"></p>
+  <p id="resE2"></p>
+
+  <h3>F. Reverso de una cadena</h3>
+  <input id="f1" type="text">
+  <button onclick="reverse()">Revertir</button>
+  <p id="resF"></p>
+
+  <h3>G. Ordenar palabras</h3>
+  <input id="g1" type="text" placeholder="Ej: pera,manzana,uva">
+  <button onclick="sortWords()">Ordenar</button>
+  <p id="resG"></p>
+
+  <h3>H. Longitud de palabra más larga</h3>
+  <input id="h1" type="text" placeholder="Ej: sol,elefante,pez">
+  <button onclick="findLongestWord()">Calcular</button>
+  <p id="resH"></p>
+
+  <h3>I. Filtrar palabras más largas que...</h3>
+  <input id="i1" type="text" placeholder="palabras separadas por coma">
+  <input id="i2" type="number" placeholder="número">
+  <button onclick="filterLongWords()">Filtrar</button>
+  <p id="resI"></p>
+
+  <h3>J. Frecuencia de caracteres</h3>
+  <input id="j1" type="text">
+  <button onclick="charFreq()">Calcular</button>
+  <pre id="resJ"></pre>
+
+</body>
+</html>

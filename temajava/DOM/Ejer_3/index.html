@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Eliminar Elemento</title>
+  <script>
+    function borrarElemento() {
+      const lista = document.getElementById("miLista");
+      if (lista.firstElementChild) {
+        lista.removeChild(lista.firstElementChild);
+      }
+    }
+  </script>
+</head>
+<body>
+  <ul id="miLista">
+    <li>Mario Cordero</li>
+    <li>Rafael Rodriguez</li>
+    <li>Roddy Vidal</li>
+    <li>Jose Fernandez</li>
+  </ul>
+  <button onclick="borrarElemento()">Eliminar primero</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function mostrarParrafos() {
+      const parrafos = document.getElementsByTagName("p");
+      let contenido = "";
+      for (let i = 0; i < parrafos.length; i++) {
+        contenido += parrafos[i].innerHTML + "<br>";
+      }
+      document.getElementById("resultado").innerHTML = contenido;
+    }
+  </script>
+</head>
+<body>
+  <p>Hola soy Mario </p>
+  <p>Estudio ASIR</p>
+  <p>En IES La Marisma</p>
+  <div id="resultado" style="margin-top:20px; background:#eee;"></div>
+  <button onclick="mostrarParrafos()">Mostrar contenido</button>
+</body>
+</html>

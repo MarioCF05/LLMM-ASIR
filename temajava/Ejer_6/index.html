@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const quotes = [
+      "Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito.",
+      "Lo que no me mata, me hace más fuerte.",
+      "El hombre que se entrena a sí mismo en el arte de la lucha no sólo se fortalece físicamente, sino que también forma su alma.",
+      "No es lo que te sucede, sino cómo reaccionas lo que cuenta.",
+      "El cuerpo es la cárcel del alma; así que manténlo fuerte y saludable, porque de él depende la claridad de la mente.",
+      "La excelencia no se logra de inmediato, es el resultado de la práctica constante y la perseverancia.",
+      "La vida no es corta, pero nosotros la hacemos corta. El entrenamiento debe ser constante, y no en función de lo que creemos que tenemos de tiempo."
+    ];
+
+    function mostrarFrase() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("frase").innerHTML = quotes[randomIndex];
+    }
+  </script>
+</head>
+<body>
+  <h2>Frases Aleatorias</h2>
+  <button onclick="mostrarFrase()">Mostrar Frase</button>
+  <p id="frase"></p>
+</body>
+</html>

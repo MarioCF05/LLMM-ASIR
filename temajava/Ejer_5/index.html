@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 5: Basics</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    section { margin-bottom: 30px; }
+    button { margin-right: 8px; padding: 6px 12px; }
+    #myPara, #messageDiv { margin-top: 12px; font-size: 1.1em; }
+    #myImage { display: block; margin-top: 12px; max-width: 200px; }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>a. Change Paragraph Style</h2>
+    <p id="myPara">This text will change its font family.</p>
+    <button onclick="setFontArial()">Arial</button>
+    <button onclick="setFontCourier()">Courier New</button>
+    <button onclick="setFontGeorgia()">Georgia</button>
+  </section>
+
+  <section>
+    <h2>b. Change Image Source</h2>
+    <img id="myImage" src="img/BOMBILLA_APAGADA.jpg" alt="Lightbulb">
+    <button onclick="turnLightOn()">Turn On</button>
+    <button onclick="turnLightOff()">Turn Off</button>
+  </section>
+
+  <section>
+    <h2>c. Show Messages in a Div</h2>
+    <button onclick="showMessageOne()">Message 1</button>
+    <button onclick="showMessageTwo()">Message 2</button>
+    <button onclick="showMessageThree()">Message 3</button>
+    <div id="messageDiv"></div>
+  </section>
+
+  <script>
+    // a. Font family changes
+    function setFontArial() {
+      document.getElementById('myPara').style.fontFamily = 'Arial';
+    }
+    function setFontCourier() {
+      document.getElementById('myPara').style.fontFamily = 'Courier New';
+    }
+    function setFontGeorgia() {
+      document.getElementById('myPara').style.fontFamily = 'Georgia';
+    }
+
+    // b. Image src swapping
+    function turnLightOn() {
+      document.getElementById('myImage').src = 'img/BOMBILLA_ENCENDIDA.jpg';  // Imagen encendida
+    }
+    function turnLightOff() {
+      document.getElementById('myImage').src = 'img/BOMBILLA_APAGADA.jpg';  // Imagen apagada
+    }
+
+    // c. Display messages
+    function showMessageOne() {
+      document.getElementById('messageDiv').innerHTML = 'Hello, this is the first message!';
+    }
+    function showMessageTwo() {
+      document.getElementById('messageDiv').innerHTML = 'Here comes the second message!';
+    }
+    function showMessageThree() {
+      document.getElementById('messageDiv').innerHTML = 'Finally, this is the third message!';
+    }
+  </script>
+
+</body>
+</html>
