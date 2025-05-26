@@ -53,3 +53,5 @@ Ejercicio | Descripcion
 [AJAX_Ejercicio3]() | En este ejercicio usaremos el archivo “json_demo_array” y el editor de w3schools. Responde a los siguientes apartados.
 [AJAX_Ejercicio4]() | En este ejercicio usaremos el archivo “json_demo” y el editor de w3schools. Responde a los siguientes apartados.
 [AJAX_Ejercicio5]() | En este ejercicio usaremos un servicio de datos de la NASA a través de una API
+[Trabajo Trismestral](https://mariocf05.github.io/Trabajo-3-Trimestre/) | Trabajo alojado
+[Trabajo Trismestral](https://github.com/MarioCF05/Trabajo-3-Trimestre) | Trabajo repositorio
