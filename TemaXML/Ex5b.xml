@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDList>
+  <CD serial="B6B41B" disc-length="36:55">
+    <name>The Dark Side of the Moon</name>
+    <artist>Pink Floyd</artist>
+    <year>1973</year>
+    <category>Progressive Rock</category>
+    <tracks>
+      <track number="1" duration="1:30">Speak to Me</track>
+      <track number="2" duration="2:43">Breathe</track>
+    </tracks>
+    <!-- This CD has more tracks than in this file -->
+  </CD>
+</CDList>

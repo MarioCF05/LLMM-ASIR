@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter>
+  <sender>
+    <name>Alice Johnson</name>
+    <address>123 Main St, Cityville</address>
+  </sender>
+  <receiver>
+    <name>Bob Smith</name>
+    <address>456 Oak Ave, Townsville</address>
+  </receiver>
+  <date>2025-05-26</date>
+  <body>
+    Dear Bob,
+    I hope this message finds you well. I'm writing to update you on our recent project developments.
+  </body>
+  <signature>Alice</signature>
+</letter>
