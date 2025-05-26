@@ -1,0 +1,13 @@
+Answers from the XML 1.0 W3C Recommendation:
+
+a. What do comments look like in XML?
+   - Comments in XML are written like this: <!-- comment -->
+   - Reference: Section 2.5
+
+b. Can an attribute be repeated in the same element?
+   - No, an attribute cannot be repeated in the same element.
+   - Reference: Section 3.1
+
+c. Where is it stated that the element names in opening and closing tags must match?
+   - It is stated in Section 3, under "Start-Tags, End-Tags, and Empty-Element Tags":
+     "The end-tag must have the same name as the start-tag."
