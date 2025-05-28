@@ -112,4 +112,97 @@ xhttp.send();
 </body>
 </html>
 ```
+---
+## 3. Escribe el código necesario para obtener los siguientes datos:
+## Ahora usando el mismo editor y el fichero books.xml
+### 1 Título del primer libro
+
+### 2 Todos los títulos
+
+### 3 Número de atributos del cuarto libro
+
+### 4 Valor de los atributos del cuarto libro
+
+### 5 Número de autores del tercer libro
+
+### 6 Autores del tercer libro
+
+### 7 Muestra una tabla que muestre el título, primer autor, precio y año
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejemplo de manipulación XML con AJAX</h2>
+
+<div id="output"></div>
+
+<script>
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+  const xmlDoc = this.responseXML;
+  const books = xmlDoc.getElementsByTagName("book");
+  let output = "";
+
+  // 1. Título del primer libro
+  const primerTitulo = books[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+  output += `<b>1. Título del primer libro:</b> ${primerTitulo}<br><br>`;
+
+  // 2. Todos los títulos
+  output += `<b>2. Todos los títulos:</b><br>`;
+  for(let i=0; i<books.length; i++) {
+    const titulo = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    output += `- ${titulo}<br>`;
+  }
+  output += `<br>`;
+
+  // 3. Número de atributos del cuarto libro
+  const cuartoLibro = books[3];
+  const numAtributos = cuartoLibro.attributes.length;
+  output += `<b>3. Número de atributos del cuarto libro:</b> ${numAtributos}<br><br>`;
+
+  // 4. Valor de los atributos del cuarto libro
+  output += `<b>4. Valores de los atributos del cuarto libro:</b><br>`;
+  for(let i=0; i<numAtributos; i++) {
+    const attr = cuartoLibro.attributes[i];
+    output += `${attr.name} = ${attr.value}<br>`;
+  }
+  output += `<br>`;
+
+  // 5. Número de autores del tercer libro
+  const autoresTercerLibro = books[2].getElementsByTagName("author");
+  const numAutores = autoresTercerLibro.length;
+  output += `<b>5. Número de autores del tercer libro:</b> ${numAutores}<br><br>`;
+
+  // 6. Autores del tercer libro
+  output += `<b>6. Autores del tercer libro:</b><br>`;
+  for(let i=0; i<numAutores; i++) {
+    output += `- ${autoresTercerLibro[i].childNodes[0].nodeValue}<br>`;
+  }
+  output += `<br>`;
+
+  // 7. Tabla con título, primer autor, precio y año de cada libro
+  output += `<b>7. Tabla con título, primer autor, precio y año:</b><br>`;
+  output += `<table border="1" cellpadding="5"><tr><th>Título</th><th>Primer autor</th><th>Precio</th><th>Año</th></tr>`;
+  for(let i=0; i<books.length; i++) {
+    const titulo = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+    const primerAutor = books[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+    const precio = books[i].getElementsByTagName("price")[0].childNodes[0].nodeValue;
+    const año = books[i].getElementsByTagName("year")[0].childNodes[0].nodeValue;
+    output += `<tr><td>${titulo}</td><td>${primerAutor}</td><td>${precio}</td><td>${año}</td></tr>`;
+  }
+  output += `</table>`;
+
+  document.getElementById("output").innerHTML = output;
+};
+
+xhttp.open("GET", "books.xml");
+xhttp.send();
+</script>
+
+</body>
+</html>
+```
+
+
 
