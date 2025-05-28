@@ -25,7 +25,7 @@ Este repositorio contiene las soluciones completas para los ejercicios de XML, i
 <entry no="24" date="27.10.2004">
 </entry>
 
-## XML tree structures
+## 2. XML tree structures
 ### Analyse the XML file below
 
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
@@ -48,7 +48,7 @@ Este repositorio contiene las soluciones completas para los ejercicios de XML, i
 
 ![IMG_0147](https://github.com/user-attachments/assets/3ef2bbf5-0119-496f-a599-66509d45795d)
 
-## XML structure
+## 3. XML structure
 ### Analyse the following XML file. Correct errors in design.
 
 <?xml version='1.0' encoding='UTF-8'?>
@@ -118,7 +118,7 @@ El XML original tiene errores de diseño porque las etiquetas están mal anidada
   <extension>09-9990011</extension>
 </president>
 
-## Mark up the following email message to identify its information content.
+## 4. Mark up the following email message to identify its information content.
 
 From: Simon North <north@synopsys.com>
 To: Nick <sintac@xs4all.nl>
@@ -143,7 +143,7 @@ to say I got the material. Thanks.
   </body>
 </email>
 
-## XML file, CD information
+## 5. XML file, CD information
 
 ### Plan an XML description for a music CD. You could use a root element called <CDList>. Information about the contents should include at least name of the record, artists, songs, publishing year, and music category. You can add more information e.g. about each track (number, duration, name, etc.) Plan first the tree structure of your XML data, and then find some data from the Web. Save as Ex5a.xml and test with your browser .
 
@@ -183,7 +183,7 @@ to say I got the material. Thanks.
   </CD>
 </CDList>
 
-## XML: a letter template
+## 6. XML: a letter template
 
 ### Create a letter structure in XML, including sender and receiver information, date, text body and a signature. Make a document instance with contents. Save your file as Ex6.xml.
 
@@ -204,7 +204,7 @@ to say I got the material. Thanks.
   <signature>Ignacio</signature>
 </letter>
 
-## The XML standard
+## 7. The XML standard
 
 ### How XML should look is described in the XML 1.0 W3C Recommendation. The language of the standard is somewhat technical and formal, but being able to read the standard yourself is quite useful. Look into the standard and answer the following questions:
 
