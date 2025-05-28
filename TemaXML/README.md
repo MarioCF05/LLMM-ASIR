@@ -1,7 +1,4 @@
-# Ejercicios XML - Soluciones Completas
-
-Este repositorio contiene las soluciones completas para los ejercicios de XML, incluyendo todos los ejemplos y estructuras corregidas.
-
+# Ejercicios XML
 ---
 
 ## 1. Simple questions:
@@ -30,7 +27,7 @@ Este repositorio contiene las soluciones completas para los ejercicios de XML, i
 <entry no="24" date="27.10.2004">
 </entry>
 ```
-
+---
 ## 2. XML tree structures
 ### Analyse the XML file below
 ```xml
@@ -54,7 +51,7 @@ Este repositorio contiene las soluciones completas para los ejercicios de XML, i
 ### Create the file and save as Ex2.xml. Open the file with a web browser
 
 ![IMG_0147](https://github.com/user-attachments/assets/3ef2bbf5-0119-496f-a599-66509d45795d)
-
+---
 ## 3. XML structure
 ### Analyse the following XML file. Correct errors in design.
 ```xml
@@ -125,6 +122,7 @@ El XML original tiene errores de diseño porque las etiquetas están mal anidada
   <extension>09-9990011</extension>
 </president>
 ```
+---
 ## 4. Mark up the following email message to identify its information content.
 
 From: Simon North <north@synopsys.com>
@@ -150,6 +148,7 @@ to say I got the material. Thanks.
   </body>
 </email>
 ```
+---
 ## 5. XML file, CD information
 
 ### Plan an XML description for a music CD. You could use a root element called <CDList>. Information about the contents should include at least name of the record, artists, songs, publishing year, and music category. You can add more information e.g. about each track (number, duration, name, etc.) Plan first the tree structure of your XML data, and then find some data from the Web. Save as Ex5a.xml and test with your browser .
@@ -190,6 +189,7 @@ to say I got the material. Thanks.
   </CD>
 </CDList>
 ```
+---
 ## 6. XML: a letter template
 
 ### Create a letter structure in XML, including sender and receiver information, date, text body and a signature. Make a document instance with contents. Save your file as Ex6.xml.
@@ -211,6 +211,7 @@ to say I got the material. Thanks.
   <signature>Ignacio</signature>
 </letter>
 ```
+---
 ## 7. The XML standard
 
 ### How XML should look is described in the XML 1.0 W3C Recommendation. The language of the standard is somewhat technical and formal, but being able to read the standard yourself is quite useful. Look into the standard and answer the following questions:
