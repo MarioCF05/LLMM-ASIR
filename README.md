@@ -38,13 +38,7 @@ Ejercicio | Descripcion
 
 Ejercicio | Descripcion
 ----------|------------
-[XML_Ejercicio1](/TemaXML/Ex1.xml) | Simple questions
-[XML_Ejercicio2](/TemaXML/Ex2.xml) | XML tree structures
-[XML_Ejercicio3](/TemaXML/Ex3.xml) | XML structure
-[XML_Ejercicio4](/TemaXML/Ex4.xml) | Mark up the following email message to identify its information content
-[XML_Ejercicio5]() | XML file, CD information
-[XML_Ejercicio6](/TemaXML/Ex6.xml) | XML: a letter template
-[XML_Ejercicio7](/TemaXML/Ex7.xml) | The XML standard
+[XML_Ejercicio1](/TemaXML/README.md) | Simple questions
 [XML_DOM_Ejercicio1]() | Escribe el código necesario para obtener los siguientes datos
 [XML_DOM_Ejercicio2]() | Escribe el código necesario para obtener los siguientes datos
 [XML_DOM_Ejercicio3]() | Escribe el código necesario para obtener los siguientes datos
