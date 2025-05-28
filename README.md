@@ -39,13 +39,8 @@ Ejercicio | Descripcion
 Ejercicio | Descripcion
 ----------|------------
 [XML_Ejercicios](/TemaXML/README.md) | All XML Questions
-[XML_DOM_Ejercicio1]() | Escribe el código necesario para obtener los siguientes datos
-[XML_DOM_Ejercicio2]() | Escribe el código necesario para obtener los siguientes datos
-[XML_DOM_Ejercicio3]() | Escribe el código necesario para obtener los siguientes datos
-[AJAX_Ejercicio1]() | Using the cd_catalog.xml file and the following code
-[AJAX_Ejercicio2]() | Escribe un programa que muestre información meteorológica de una localidad de Huelva (o cualquier otra provincia de tu elección): temperatura máxima y mínima, estado del cielo por tramo horario, dirección y velocidad del viento y humedad relativa).
-[AJAX_Ejercicio3]() | En este ejercicio usaremos el archivo “json_demo_array” y el editor de w3schools. Responde a los siguientes apartados.
-[AJAX_Ejercicio4]() | En este ejercicio usaremos el archivo “json_demo” y el editor de w3schools. Responde a los siguientes apartados.
-[AJAX_Ejercicio5]() | En este ejercicio usaremos un servicio de datos de la NASA a través de una API
+[XML_DOM_Ejercicios](/TemaXML/README2.md) | All XML_DOM Questions
+[AJAX_Ejercicios](/TemaXML/README3.md) | All AJAX Questions
+
 [Trabajo Trismestral](https://mariocf05.github.io/Trabajo-3-Trimestre/) | Trabajo alojado
 [Trabajo Trismestral](https://github.com/MarioCF05/Trabajo-3-Trimestre) | Trabajo repositorio
