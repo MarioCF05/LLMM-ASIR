@@ -38,7 +38,7 @@ Ejercicio | Descripcion
 
 Ejercicio | Descripcion
 ----------|------------
-[XML_Ejercicio1](/TemaXML/README.md) | Simple questions
+[XML_Ejercicios](/TemaXML/README.md) | All XML Questions
 [XML_DOM_Ejercicio1]() | Escribe el código necesario para obtener los siguientes datos
 [XML_DOM_Ejercicio2]() | Escribe el código necesario para obtener los siguientes datos
 [XML_DOM_Ejercicio3]() | Escribe el código necesario para obtener los siguientes datos
